@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {{#posts}}
+    <tr>
+        <th scope="row">{{id}}</th>
+        <td>{{title}}</td>
+        <td>{{body}}</td>
+        <td>
+            <button type="button" data-post="{{id}}" class="btn btn-outline-primary btn-sm showCommentsButton">
+                Comment
+            </button>
+        </td>
+    </tr>
+    {{/posts}}
+    </tbody>
+</table>

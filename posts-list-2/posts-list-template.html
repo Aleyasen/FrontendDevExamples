@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {{#posts}}
+    <tr>
+        <th scope="row">{{id}}</th>
+        <td>{{title}}</td>
+        <td>{{body}}</td>
+    </tr>
+    {{/posts}}
+    </tbody>
+</table>
